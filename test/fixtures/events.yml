@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  id: 1
+  title: "Metronóm Jazz Klub: Váczi Eszter és a Quartet @ E78, Pécs"
+  picture: "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/s720x720/12573688_1093068344060267_2387834267954652344_n.jpg?oh=b3c7d3efbc191d5908b9400feda24d71&oe=57593E28"
+  location: "E78"
+  json_data: '{"description":"Scroll down for English descripton!\n\nmájus 19. 20.00\n\nMetronóm Jazz Klub: Váczi Eszter és a Quartet\n\nZsolnay Negyed – E78 – Koncertterem\n\nVáczi Eszter és kvartettje új lemezük, a Belső tenger készítésekor immár másodszor dolgozott együtt a négyszeres Grammy-díjas producer-hangmérnökkel, Helik Hadarral. A világhírű szakemberrel közösen formált zenei ízlésvilág egy mélyebb, elgondolkodtatóbb megközelítésre ösztönzi a hallgatót. Ehhez párosulnak Eszter egyedülálló szövegei, melyekért 2014-ben az énekesnő az „év szövegírója” elismerést kapta az Artisjustól.\n\nVáczi Eszter – ének\nGátos Iván – zongora\nGátos Bálint – basszusgitár\nMike Zsolt – dobok\nSchneider Zoltán – gitár\n\n\nTámogatja az NKA és a Cseh Tamás program.\n\nJegyárak: 1300 Ft, diák 990 Ft \nAz online jegyvásárlás mellett jegyek válthatók személyesen is: Zsolnay Negyed Infopontok, Kodály Központ jegypénztár, Művészetek és Irodalom Háza, Cella Septichora Látogatóközpont, Partyzoo Jegyiroda\n\nSzervező: Zsolnay Örökségkezelő NKft.\n\n\n✫✫✫ In English ✫✫✫\n\nMay 19. 20.00\n\nMetronome Jazz Club: Váczi Eszter and the Quartet\n\nZsolnay Quarter – E78 – Concert Hall\n\nDuring the production of their new album, The Sea Inside, Eszter Váczi and her quartet have worked together with the four-time Grammy Award-winning producer-engineer, Heli Hadar for the second time. The musical world, formed by the collaboration with the world-renowned professional encourages the audience to have a deeper, more meditative approach. This is coupled with the unique texts of Esther, for which the singer earned the Artisjust’s \"lyricist of the year\" award in 2014. \n\nTickets: 1300 HUF, students 990 HUF \nBeside online purchase, tickets are also available at Infopoints of Zsolnay Quarter,  Ticket Office of Kodály Centre, House of Art and Literature, Cella Septichora Visitor Centre, Partyzoo Ticket Office\n\nOrganiser: Zsolnay Heritage Management Nonprofit Ltd.","is_date_only":false,"location":"E78","name":"Metronóm Jazz Klub: Váczi Eszter és a Quartet @ E78, Pécs","owner":{"name":"Zsolnay Negyed","category":"Arts/Entertainment/Nightlife","category_list":[{"id":"197817313562497","name":"Museum"},{"id":"110207655727714","name":"Public Square"},{"id":"192092574152128","name":"Playground"}],"id":"161935453840232"},"privacy":"OPEN","start_time":"2016-05-19T20:00:00+0200","timezone":"Europe/Budapest","updated_time":"2016-02-02T17:04:02+0000","venue":{"city":"Pécs","country":"Hungary","latitude":46.0778885,"longitude":18.2471199,"street":"Major utca 21.","zip":"7626","id":"1575063852710174"},"id":"158807571159114"}'
+  date: "2016-05-19"
+  fb_id: 158807571159114
+  page_id: 1
+  description: "Scroll down for English descripton!"

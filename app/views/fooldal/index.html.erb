@@ -1,0 +1,28 @@
+<table class="table table-striped">
+	<% @events.each do |event|%>
+		<tr>
+			<td>
+				<div class="row" itemscope itemtype="http://data-vocabulary.org/Event">
+					<div class="col-md-3 photo-container">
+							<img itemprop="photo" class="img-responsive" src="<%= event.picture %>" alt="">
+					</div>
+					<div class="col-md-5">
+						<h4 style="margin-top:7px" itemprop="summary"><a itemprop="url" href="/event/<%= event.id %>"><%= event.title %></a></h4>
+						<p><time itemprop="startDate" datetime="<%= event.date %>"><%= l event.date, :format => '%Y. %b %d.' %><br><%= l event.date, :format => '%A %H:%M' %></time><br>
+						<span itemprop="location">
+							<a href="http://www.facebook.com/<%= event.page_id %>"><%= event.location %></a>
+						</span>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<div class="desc" itemprop="description"><%= event.description %></div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	<% end %>
+</table>
+
+<footer class="text-center">
+	<small><a href="mailto:pecsevents@gmail.com">pecsevents@gmail.com</a></small>
+</footer>
