@@ -8,3 +8,29 @@
 	text-overflow: ellipsis;
 	display: block;
 }
+
+#filter{
+	position: absolute;
+	width: 300px;
+	top:0;
+	left:-300px;
+	background: #fff;
+	z-index:1;
+	padding:10px;
+	padding-top: 20px;
+	h2{
+		font-size: 18px;
+	}
+	&.open{
+		transform: translateX(300px);
+		transition-duration: 0.2s;
+		transition-property: transform;
+	}
+}
+
+#filter_button{
+	position: fixed;
+	top:5px;
+	left:5px;
+	z-index:2;
+}

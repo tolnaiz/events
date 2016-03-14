@@ -1,4 +1,4 @@
-* we should save the event's starting time
 * rake task to add/remove facebook pages
-* a simple date/page filter
+* add page filter
+* filter and pagination together
 * calendar like design for dates

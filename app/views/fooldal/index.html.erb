@@ -1,4 +1,10 @@
-<table class="table table-striped">
+<% if not @xhr %>
+<button class="btn btn-default" type="button" id="filter_button">
+    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+</button>
+<%= render "shared/filter" %>
+<table class="table table-striped" id="events">
+<% end %>
 	<% @events.each do |event|%>
 		<tr>
 			<td>
@@ -21,8 +27,16 @@
 			</td>
 		</tr>
 	<% end %>
+<% if not @xhr %>
 </table>
+<% end %>
 
-<footer class="text-center">
-	<small><a href="mailto:pecsevents@gmail.com">pecsevents@gmail.com</a></small>
-</footer>
+<% if not @xhr %>
+	<div class="text-center">
+		<p><a href="#" class="btn btn-primary" id="meg_tobb">Még több esemény</a></p>
+	</div>
+
+	<footer class="text-center">
+		<small><a href="mailto:pecsevents@gmail.com">pecsevents@gmail.com</a></small> last update: <%= @last_update or 'unknown' %>
+	</footer>
+<% end %>

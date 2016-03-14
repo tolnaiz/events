@@ -1,6 +1,7 @@
 namespace :cron do
   desc "Downloading facebook events"
   task event_download: :environment do
+    puts "Starting: " + Time.now.to_s
     @graph = Koala::Facebook::API.new("***REMOVED***", '***REMOVED***')
 
     @pages = Page.all
@@ -34,7 +35,8 @@ namespace :cron do
             puts page['link'] + " error"
         end
     end
-
+    Setting.last_update = Time.now
+    puts "Finishing: " + Time.now.to_s
   end
 
 end

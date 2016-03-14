@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160228114614) do
+ActiveRecord::Schema.define(version: 20160314174804) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title",       limit: 255
     t.string   "picture",     limit: 255
     t.string   "location",    limit: 255
     t.text     "json_data",   limit: 65535
-    t.date     "date"
+    t.datetime "date"
     t.integer  "fb_id",       limit: 8
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20160228114614) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "settings", force: :cascade do |t|
+    t.string "key",   limit: 255
+    t.text   "value", limit: 65535
+  end
+
+  add_index "settings", ["key"], name: "index_settings_on_key", unique: true, using: :btree
 
   add_foreign_key "events", "pages"
 end
