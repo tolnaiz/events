@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
 end
 
+gem 'dotenv-rails'
 gem "koala", "~> 2.2"
 gem "bootstrap-sass"
 gem "mysql2"
