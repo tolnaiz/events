@@ -2,7 +2,7 @@ namespace :cron do
   desc "Downloading facebook events"
   task event_download: :environment do
     puts "Starting: " + Time.now.to_s
-    @graph = Koala::Facebook::API.new("***REMOVED***", '***REMOVED***')
+    @graph = Koala::Facebook::API.new(Setting.fb_access_token, Setting.fb_app_secret)
 
     @pages = Page.all
 
